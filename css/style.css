@@ -1,115 +1,44 @@
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 1rem;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background for the entire page */
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            font-size: 28px; /* Change the size of h2 */
+            background-color: #ffebcd; /* Light coral background color for h2 */
+            color: #2f4f4f; /* Dark slate gray text color for h2 */
+            padding: 10px;
+            border: 2px solid #dda0dd; /* Purple border for h2 */
+        }
+        ul {
+            border: 1px solid #add8e6; /* Light blue border for the list */
+            padding: 15px;
+            background-color: #fafad2; /* Light goldenrod yellow background for the list */
+        }
+    </style>
+</head>
+<body>
 
-/* Accessible Skip link */
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 1rem;
-    background: #000;
-    color: #fff;
-    padding: 0.5rem;
-    text-decoration: none;
-    z-index: 100;
-    transition: top 0.3s ease;
-}
+    <h2>Travel to Australia</h2>
+    <ul>
+        <li>Diverse wildlife</li>
+        <li>Stunning natural landmarks</li>
+        <li>Vibrant cities</li>
+    </ul>
+    <p>
+        Australia is a country known for its unique wildlife, including kangaroos and koalas,
+        as well as its stunning natural landmarks like the Great Barrier Reef and the Outback.
+        Home to vibrant cities such as Sydney, Melbourne, and Brisbane, 
+        Australia offers a mix of urban excitement and natural beauty.
+        Whether you're interested in exploring its beautiful beaches or experiencing its diverse culture,
+        Australia has something to offer every traveler.
+    </p>
 
-.skip-link:focus {
-    top: 10px;
-}
-
-/* Navigation using grid */
-nav ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    list-style: none;
-    background: #333;
-    padding: 1rem;
-    text-align: center;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.5rem;
-    display: inline-block;
-    border-radius: 0.25rem;
-}
-
-nav ul li a.active {
-    font-weight: bold;
-    border: 2px solid #555;
-    background: #555;
-}
-
-/* Main content using Grid (2 columns naturally, but easily adjusts with simple management) */
-main {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1fr; /* Default to single column for mobile-first design */
-    gap: 1rem;
-    padding: 1rem;
-    background: white;
-    border-radius: 0.5rem;
-    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
-}
-
-section {
-    display: grid;
-    grid-template-columns: 1fr; /* Keep it single-column to suit mobile-first design */
-    gap: 1rem; /* Apply gap between elements for clean layout */
-}
-
-h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-p, ol, ul {
-    font-size: 1rem;
-    line-height: 1.4;
-}
-
-/* Container for consistent alignment */
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-/* Image styling */
-img {
-    max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    margin: 0 auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer styles */
-footer {
-    margin-top: 1rem;
-    text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: white;
-    border-radius: 0.5rem;
-    font-size: 0.875rem;
-}
-footer a {
-    color: #ffffff; /* White color for footer links */
-    text-decoration: underline; /* Remove underline for a cleaner look */
-}
-
-footer a:hover {
-    color: #e0e0e0; /* Light grey on hover for subtle contrast */
-    text-decoration: underline; /* Add underline on hover for emphasis */
-}
+</body>
+</html>
