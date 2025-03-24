@@ -3,6 +3,10 @@
     --accent-font: 'Merriweather', serif;
     --accessible-font: 'Atkinson Hyperlegible', sans-serif;
 }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 body {
     font-family: var(--primary-font);
     line-height: 1.6;
@@ -10,6 +14,9 @@ body {
     background-color: #FFFFFF;
     color: #00274C;
     padding: 1.5rem;
+}
+header {
+    animation: fadeIn 2s ease-in-out;
 }
 .skip-link {
     position: absolute;
@@ -111,4 +118,37 @@ footer a {
 footer a:hover {
     color: #FFFFFF;
     text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns for images */
+        gap: 1rem;
+        align-items: center;
+        justify-items: stretch;
+        width: 100%; /* Use full width but within limits */
+        max-width: 1200px; /* Set a maximum width for the container */
+        margin: 0 auto; /* Center the container on the page */
+    }
+
+    .image-container img {
+        width: 100%; /* Use all available space within the container */
+        height: auto;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+        padding: 1.5rem;
+    }
+
+    header, main, footer {
+        padding: 0 1.5rem; /* Adjusted padding for consistent spacing */
+    }
+
+    body {
+        padding: 0; /* Remove body padding to align content */
+    }
 }
