@@ -43,8 +43,13 @@
     </main>
 
     <footer>
-        <p>UMSI Website | <a href="https://www.si.umich.edu">UMSI Academic Advising</a></p>
+        <p>UMSI Website | <a href="https://www.si.umich.edu">UMSI Academic Advising</a> | <span id="year"></span></p>
     </footer>
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearElement = document.getElementById('year');
+            yearElement.textContent = new Date().getFullYear();
+        });
+    </script>
 </body>
 </html>
