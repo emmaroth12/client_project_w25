@@ -123,17 +123,17 @@ footer a:hover {
 @media (min-width: 768px) {
     .image-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns for images */
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         align-items: center;
         justify-items: stretch;
-        width: 100%; /* Use full width but within limits */
-        max-width: 1200px; /* Set a maximum width for the container */
-        margin: 0 auto; /* Center the container on the page */
+        width: 100%; 
+        max-width: 1200px; 
+        margin: 0 auto; 
     }
 
     .image-container img {
-        width: 100%; /* Use all available space within the container */
+        width: 100%; 
         height: auto;
         border-radius: 0.5rem;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -145,10 +145,10 @@ footer a:hover {
     }
 
     header, main, footer {
-        padding: 0 1.5rem; /* Adjusted padding for consistent spacing */
+        padding: 0 1.5rem; 
     }
 
     body {
-        padding: 0; /* Remove body padding to align content */
+        padding: 0; 
     }
 }
